@@ -71,14 +71,14 @@ public class VendingMachine {
         return null;
     }
 
-    public BottleOfWater getBottleOfMilk(String name, int volume){
+    public BottleOfMilk getBottleOfMilk(String name, int volume){
 
         for (Product product : products){
-            if (product instanceof BottleOfWater){
-                if (product.getName() == name && ((BottleOfWater)product).getVolume() == volume){
+            if (product instanceof BottleOfMilk){
+                if (product.getName() == name && ((BottleOfMilk)product).getVolume() == volume){
                     System.out.println("Вы купили молоко: ");
                     System.out.println(product.displayInfo());
-                    return (BottleOfWater)product;
+                    return (BottleOfMilk)product;
                 }
             }
         }
@@ -86,6 +86,20 @@ public class VendingMachine {
         return null;
     }
 
-   
+    public Chocolate getChocolate(String name, int calories){
+
+        for (Product product : products){
+            if (product instanceof Chocolate){
+                if (product.getName() == name && ((Chocolate)product).getCalories() == calories){
+                    System.out.println("Вы купили шоколад: ");
+                    System.out.println(product.displayInfo());
+                    return (Chocolate)product;
+                }
+            }
+        }
+        System.out.println("Такого шоколада нет в автомате.");
+        return null;
+    }
+
 
 }

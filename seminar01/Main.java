@@ -39,8 +39,10 @@ public class Main {
         wallet.topUpBalance(600);
         wallet.tellBalance();
 
-        // BottleOfWater bottleOfWaterRes1 =  machine.getBottleOfWater("Вода3", 3);
-        // BottleOfWater bottleOfWaterRes2 =  machine.getBottleOfMilk("Молоко", 2);
+        // BottleOfWater bottleOfWaterRes1 =  machine.getBottleOfWater("Вода2", 1);
+        // BottleOfMilk bottleOfWaterRes2 =  machine.getBottleOfMilk("Соевое", 2);
+        // Chocolate ChocolateRes1 =  machine.getChocolate("Сникерс", 300);
+
         System.out.println("-----");
         pocket.putToPocket(machine.buyProduct(BottleOfMilk.class, wallet)); 
         System.out.println("-----");

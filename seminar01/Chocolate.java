@@ -8,6 +8,10 @@ public class Chocolate extends Product {
         this.calories = calories;
     }
 
+    public int getCalories() {
+        return calories;
+    }
+
     public Chocolate(String name, int price, int calories){
         super(name,price);
         setCalories(calories);
