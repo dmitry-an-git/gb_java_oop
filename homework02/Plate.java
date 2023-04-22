@@ -9,20 +9,16 @@ public class Plate {
         Plate.r = new Random();
     }
 
+    {
+        food = 0;
+    }
+
     public Plate() {
         this(Plate.r.nextInt(50,500));
     }
 
     public Plate(int food) {
-        this.food = food;
-    }
-
-    public void info() {
-        System.out.println("В тарелке: " + food);
-    }
-
-    public int getFood() {
-        return food;
+        this.setFood(food);
     }
 
     public void setFood(int food) {
@@ -33,7 +29,15 @@ public class Plate {
         }
     }
 
+    public int getFood() {
+        return food;
+    }
+
     public void addFood(int newFood) {
         this.setFood(this.getFood() + newFood);
+    }
+
+    public void info() {
+        System.out.println("В тарелке: " + food);
     }
 }
