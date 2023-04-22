@@ -26,10 +26,14 @@ public class Plate {
     }
 
     public void setFood(int food) {
-        this.food = food;
+        if (food >= 0) {
+            this.food = food;
+        } else {
+            System.out.println("Еда не может быть отрицательной");
+        }
     }
 
     public void addFood(int newFood) {
-        this.food += newFood;
+        this.setFood(this.getFood() + newFood);
     }
 }
