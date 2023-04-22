@@ -4,12 +4,15 @@ import java.util.ListIterator;
 
 public class MainClass {
     public static void main(String[] args) {
-        // Cat cat = new Cat("Barsique", 5);
+        // Cat cat0 = new Cat("Barsique", 5);
+        // cat0.isFull();
+        // cat0.setAppetite(0);
+        // cat0.isFull();
         // Plate plate = new Plate(100);
         // plate.info();
-        // cat.eat(plate);
-        // //plate.setFood(plate.getFood() - cat.getAppetite());
-        // cat.isFull();
+        // cat0.eat(plate);
+        // //plate.setFood(plate.getFood() - cat0.getAppetite());
+        // cat0.isFull();
     
         List<Cat> cats = new ArrayList<Cat>();
         Plate plate = new Plate(400);
