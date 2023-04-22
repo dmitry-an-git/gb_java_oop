@@ -10,15 +10,17 @@ public class Cat {
 
     static {
         r = new Random();
-        number = 0;
+    }
+
+    {
+        number++; // due to some reasons it always starts with 0, not 1!
     }
 
     public Cat() {
-        this(String.format("Кот %d", number+1), Cat.r.nextInt(50, 100));
+        this(String.format("Кот %d", Cat.number+1), Cat.r.nextInt(50, 100));
     }
 
     public Cat(String name, int appetite) {
-        Cat.number += 1;
         this.name = name;
         setAppetite(appetite);
     }
