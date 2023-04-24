@@ -21,6 +21,8 @@ public class MainClass {
         for (int i = 0; i < 10; i++) {
             cats.add(new Cat());
             cats.get(i).isFull(); 
+            System.out.println(cats.get(i).getNumber());
+             
         }  
         plate.info();
 

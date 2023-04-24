@@ -16,8 +16,12 @@ public class Cat {
         number++; // due to some reasons it always starts with 0, not 1!
     }
 
+    public static int getNumber() {
+        return number;
+    }
+
     public Cat() {
-        this(String.format("Кот %d", Cat.number+1), Cat.r.nextInt(50, 100));
+        this(String.format("Кот %d", getNumber()), Cat.r.nextInt(50, 100));
     }
 
     public Cat(String name, int appetite) {
