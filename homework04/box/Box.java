@@ -69,7 +69,7 @@ public class Box<T extends Fruit> {
     }
    
     public boolean compare(Box<? extends Fruit> anotherBox){
-        if (this.fruits.size() == anotherBox.fruits.size()) {
+        if (Math.round(this.getWeight()*10) == Math.round(anotherBox.getWeight()*10)) {
             return true;
         } else {
             return false;

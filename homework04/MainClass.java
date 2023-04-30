@@ -64,10 +64,10 @@ public class MainClass {
     b1.info(); // В коробке №1 апельсины, 1 шт, общий вес 0.3
 
     System.out.println("\nCравниваю коробки 1 и 3:");
-    System.out.println(b3.compare(b1)); // false
+    System.out.println(b3.compare(b1)); 
 
     System.out.println("\nCравниваю коробки 1 и 4:");
-    System.out.println(b3.compare(b1)); // true
+    System.out.println(b3.compare(b1)); 
 
     }
 
