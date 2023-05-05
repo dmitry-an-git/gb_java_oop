@@ -69,6 +69,10 @@ public class MainClass {
     System.out.println("\nCравниваю коробки 1 и 4:");
     System.out.println(b3.compare(b1)); 
 
+    Box<Fruit> b5 = new Box<>(size);
+    b5.addFruit(a1);
+    Orange o1 = new Orange();
+    b5.addFruit(o1);
     }
 
 

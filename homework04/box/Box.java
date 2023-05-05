@@ -1,6 +1,8 @@
 package box;
 import java.util.ArrayList;
 
+import javax.imageio.plugins.tiff.TIFFField;
+
 import fruits.*;
 
 
@@ -20,7 +22,7 @@ public class Box<T extends Fruit> {
 
     public Box(int number){
         this.number = number;
-        fruits = new ArrayList<T>();
+        fruits = new ArrayList<>();
     }
 
     public void addFruit(T fruit){
