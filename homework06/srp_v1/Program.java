@@ -1,6 +1,6 @@
 package srp_v1;
 
-import srp_v1.productSaver.*;
+import srp_v1.orderSaver.*;
 
 /**
  * Program
@@ -16,7 +16,7 @@ public class Program {
         Order order = new Order("", "", 0, 0);
         order.inputFromConsole();
 
-        ProductSaver ps = new ProductSaver(order);
+        OrderSaver ps = new OrderSaver(order);
         ps.save(new SaveJSON());
         ps.save(new SaveXML());
 

@@ -1,4 +1,4 @@
-package srp_v1.productSaver;
+package srp_v1.orderSaver;
 
 import java.io.FileWriter;
 import java.io.IOException;

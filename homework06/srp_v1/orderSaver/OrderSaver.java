@@ -1,12 +1,12 @@
-package srp_v1.productSaver;
+package srp_v1.orderSaver;
 
 import srp_v1.Order;
 
-public class ProductSaver {
+public class OrderSaver {
     
     private Order order;
 
-    public ProductSaver(Order order){
+    public OrderSaver(Order order){
         this.order = order;
     }
 
