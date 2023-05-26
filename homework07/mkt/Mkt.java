@@ -1,4 +1,4 @@
-package vacancy;
+package mkt;
 
 import java.util.ArrayList;
 import java.util.List;

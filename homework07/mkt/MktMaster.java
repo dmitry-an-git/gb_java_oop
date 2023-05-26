@@ -1,8 +1,7 @@
-package vacancy;
+package mkt;
 
 public class MktMaster extends MktPosition {
     
-
     public MktMaster(){
         this.title = "Mастер";
         this.minSalary = 50000;

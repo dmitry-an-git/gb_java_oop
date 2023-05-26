@@ -1,13 +1,14 @@
 package observer;
 
-import vacancy.*;
+import mkt.MktPosition;
+import mkt.MktTrainee;
 
 public class Student implements Observer {
 
     private String name;
     private double salary;
     private Integer skill;
-    private MktPosition wantedPosition;
+    private MktTrainee wantedPosition;
 
     public Student(String name, Integer skill) {
         this.name = name;

@@ -2,6 +2,8 @@
 import java.util.List;
 import java.util.Random;
 
+import mkt.Mkt;
+import mkt.MktPosition;
 import publisher.Publisher;
 import vacancy.*;
 
@@ -21,7 +23,7 @@ public class Company {
 
     }
     /**
-     * компания выбирает должность из существующих на рынке
+     * компания выбирает должность из существующих на рынке (рандом)
      * заработную плату из рыночного интервала для данной должности (рандом)
      * уровень требований к кандидату (рандом от 1 до 10)
      * упаковывает все в оффер и отправляет в агентство
@@ -31,8 +33,8 @@ public class Company {
         int randomIndex = random.nextInt(slots.size());
         MktPosition slot = slots.get(randomIndex);
         int skill = random.nextInt(1,11);
-        double salary = random.nextDouble(slot.minSalary, slot.maxSalary);
-        Vacancy vacancy = new Vacancy(nameCompany, slot, salary, skill);
+        double salary = random.nextDouble(slot.getMinSalary(), slot.getMaxSalary());
+        Message vacancy = new Vacancy(nameCompany, slot, salary, skill);
         jobAgency.sendOffer(vacancy);
     }
 }

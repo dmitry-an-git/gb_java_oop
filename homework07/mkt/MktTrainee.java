@@ -1,4 +1,4 @@
-package vacancy;
+package mkt;
 
 public class MktTrainee extends MktPosition{
 

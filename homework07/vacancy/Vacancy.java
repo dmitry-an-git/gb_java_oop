@@ -1,6 +1,8 @@
 package vacancy;
 
-public class Vacancy {
+import mkt.MktPosition;
+
+public class Vacancy implements Message {
 
     private MktPosition position;
     private String nameCompany;

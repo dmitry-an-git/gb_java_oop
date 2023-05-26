@@ -1,7 +1,7 @@
 package publisher;
 
 import observer.Observer;
-import vacancy.Vacancy;
+import vacancy.*;
 
 public interface Publisher {
 
@@ -9,6 +9,6 @@ public interface Publisher {
 
     void removeObserver(Observer observer);
 
-    void sendOffer(Vacancy vacancy);
+    void sendOffer(Message vacancy);
 
 }

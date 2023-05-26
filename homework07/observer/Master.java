@@ -1,6 +1,7 @@
 package observer;
 
-import vacancy.*;
+import mkt.MktMaster;
+import mkt.MktPosition;
 
 public class Master implements Observer {
     

@@ -2,8 +2,8 @@ package observerparam;
 
 import java.util.Random;
 
+import mkt.MktPosition;
 import observer.Observer;
-import vacancy.MktPosition;
 
 public class Candidate<T extends MktPosition> implements Observer {
     private String name;
@@ -23,7 +23,7 @@ public class Candidate<T extends MktPosition> implements Observer {
         this.skill = skill;
         this.wantedPosition = wantedPosition;
         random = new Random();
-        this.salary = random.nextDouble(wantedPosition.minSalary,wantedPosition.maxSalary);
+        this.salary = random.nextDouble(wantedPosition.getMinSalary(),wantedPosition.getMaxSalary());
     }
     /**
      * конструктор с указанием желаемой ЗП вручную

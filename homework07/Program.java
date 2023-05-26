@@ -1,13 +1,14 @@
 
+import mkt.*;
 import observer.*;
 import observerparam.Candidate;
 import publisher.*;
-import vacancy.*;
+
 
 public class Program {
 
     /**
-     * TODO: Доработать приложение, поработать с шаблоном проектирования Observer,
+     *  DONE: Доработать приложение, поработать с шаблоном проектирования Observer,
      *  добавить новый тип соискателя.
      *  Добавить новую сущность "Вакансия", компания должна рассылать вакансии.
      * @param args

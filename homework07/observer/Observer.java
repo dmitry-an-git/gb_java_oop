@@ -1,6 +1,7 @@
 package observer;
 
-import vacancy.*;
+import mkt.MktPosition;
+
 
 /**
  * Интерфейс наблюдателя (соискателя, человек в поисках работы)

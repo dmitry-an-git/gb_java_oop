@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import observer.Observer;
-import vacancy.Vacancy;
+import vacancy.*;
 
 public class JobAgency implements Publisher {
 
@@ -27,10 +27,10 @@ public class JobAgency implements Publisher {
      * @param salary
      */
     @Override
-    public void sendOffer(Vacancy vacancy) {
+    public void sendOffer(Message vacancy) {
         Double salary = vacancy.getSalary();
         String nameCompany = vacancy.getNameCompany();
-        String position = vacancy.getPosition().title;
+        String position = vacancy.getPosition().getTitle();
         Integer skill = vacancy.getSkill();
 
         System.out.printf("Ищем кандидатов: %s, %s, з/п: %.2f, требования: %d\n", nameCompany, position, salary, skill);
